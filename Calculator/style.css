@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;  /* For absolute positioning of the history icon */
+    width: 400px; /* Set a fixed width for better alignment */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.screen input {
+    width: 100%;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.pad {
+    display: grid;
+    gap: 10px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    background-color: #ddd;
+}
+
+/* History Icon */
+.history-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-icon:hover {
+    background-color: #e0e0e0;
+}
+
+/* History Modal */
+.history-modal {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    padding: 10px;
+    display: none; /* Initially hidden */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.history-modal .history {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.history-modal .history div {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+#clearHistory {
+    padding: 8px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#clearHistory:hover {
+    background-color: #e0e0e0;
+}
+
+/* Backspace Button */
+button:contains('←') {
+    background-color: #ff5c5c;
+    color: white;
+}
+
+button:contains('←'):hover {
+    background-color: #e04c4c;
+}
+
+button:contains('←'):active {
+    background-color: #d43f3f;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator | Vanilla.js</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+      <div class="screen">
+        <input type="text" readonly />
+      </div>
+      <div class="pad">
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>C</button>
+        </div>
+        <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+        </div>
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+        </div>
+        <div>
+            <button>.</button>
+            <button>0</button>
+            <button>=</button>
+            <button>X</button>
+        </div>
+        <div>
+            <button>/</button>
+            <button>%</button>
+            <button>#</button>
+            <button>*</button>
+        </div>
+      </div>
+      
+      <!-- History Icon Button -->
+      <div class="history-icon" id="historyIcon">
+        🕒
+      </div>
+      
+      <!-- History Modal -->
+      <div class="history-modal" id="historyModal">
+        <h2>History</h2>
+        <div class="history"></div>
+        <button id="clearHistory">Clear History</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
